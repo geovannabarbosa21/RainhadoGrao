@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./portstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/carrossel/shorticon.png" />
+    <title>Rainha do Café</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <a href="./index.html"
+            ><img src="./assets/logo site geo.png" alt="logo"
+          /></a>
+        </div>
+
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('#rainha')"
+              >A Rainha</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('./port.html')"
+              >Portifólio</a
+            >
+          </li>
+          <li>
+            <a
+              href="javascript:void(0);"
+              onclick="redirectPageOrSection('#contato')"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="cartao">
+      <img src="./assets/Cartão de Visita Rainha do Grão_page-0001.jpg" alt="">
+    </div>
+
+    <div class="flyer">
+      <img src="./assets/icons/Flyer Rainha do Grão.jpg" alt="">
+    </div>
+
+    <div class="news" id="contato">
+      <div class="contatos">
+        <div class="logo2">
+          <img src="./assets/icons/Logo Vertical Rainha do Grão.png" alt="" />
+        </div>
+
+        <div class="redes">
+          <div class="facebook">
+            <a
+              href="https://www.facebook.com/Loja-String-Music-101843232541739"
+              target="_blank"
+              ><img src="./assets/icons/Logo Facebook.png" alt="facebook"
+            /></a>
+          </div>
+
+          <div class="instagram">
+            <a
+              href="https://www.instagram.com/loja.stringmusic/"
+              target="_blank"
+              ><img src="./assets/icons/Logo Instagram.png" alt="instagram"
+            /></a>
+          </div>
+
+          <div class="whatsapp">
+            <a href="https://wa.me/5511981996294" target="_blank"
+              ><img src="./assets/icons/Logo WhatsApp.png" alt="whatsapp"
+            /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="form">
+        <h1>Mailing</h1>
+        <p>Cadastre-se no nosso Mailing e receba as melhores novidades da Rainha</p>
+        <form action="mailto:pedro.martins55757@gmail.com" method="post">
+          
+          <input
+            name="newsletter"
+            type="email"
+            placeholder="Digite seu Email"
+            required
+          />
+
+          <div class="submit">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

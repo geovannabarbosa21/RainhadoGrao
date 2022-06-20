@@ -1,0 +1,549 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 10vw;
+  margin-top: 5vh;
+}
+
+.nav--hidden {
+  transform: translateY(-30vh);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  height: 30vh;
+  width: 100vw;
+  position: fixed;
+  transition: transform .5s;
+  font-family: 'Habibi', serif;
+}
+
+.nav-list {
+  width: 80vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1vw;
+}
+
+.nav-list a {
+  color: #964b00;
+}
+
+.logo {
+  width:  15vw;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 10vw;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #964b00;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.conteudo {
+  width: 70vw;
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+}
+
+.texto {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 5vw;
+  width: 46vw;
+  margin-top: 35vh;
+}
+
+.texto h1 {
+  font-size: 3vw;
+  color: #ffffff;
+  text-shadow: 0 0 10px #241200;
+  text-align: start;
+}
+
+.texto p {
+  margin-top: 3vh;
+  font-size: 1.2vw;
+  color: #fff;
+  text-shadow: 0 0 2px#241200;
+}
+
+.topico1 {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  text-align: justify;
+  background: url(./assets/blur.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topico1:active {
+  background-image: url(./assets/One-cup-of-coffee-red-mug-coffee-beans_3840x2160.jpg);
+}
+
+.rainha {
+  margin-top: 10vh;
+  width: 100vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-rainha {
+  width: 60vw;
+  text-align: justify;
+  font-family: "Open Sans", sans-serif;
+}
+
+.texto-rainha h1 {
+  font-size: 3vw;
+  text-align: center;
+  color: #964b00;
+}
+
+.texto-rainha p {
+  font-size: 1.2vw;
+  margin-top: 5vh;
+  letter-spacing: 3px;
+}
+
+.news {
+  border-top: 1px solid #964b00;
+  width: 100%;
+  height: 70vh;
+  background-color: #fff;
+  color: #964b00;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form input {
+  margin-top: 1vh;
+  width: 15vw;
+  height: 3.7vh;
+  font-size: 0.7vw;
+  border-radius: 10px;
+  text-align: left;
+  background-color: transparent;
+  border: 1px solid #964b00;
+  color: #000;
+  padding: 0.5vw;
+}
+
+button {
+  margin-top: 2vh;
+  width: 5vw;
+  height: 3vh;
+  border-radius: 10px;
+  background-color: transparent;
+  border: 1px solid #964b00;
+  color: #964b00;
+  cursor: pointer;
+  font-size: .7vw;
+}
+
+.logo2 {
+  width: 10vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2vw;
+}
+
+.logo2 img {
+  width: 10vw;
+}
+
+.redes {
+  display: flex;
+  /* width: 50vw; */
+  align-items: center;
+  justify-content: space-around;
+}
+
+.redes img {
+  width: 2.3vw;
+}
+
+.whatsapp img {
+  width: 2vw;
+}
+
+hr {
+  margin-top: 5vh;
+  width: 100vw;
+}
+
+.carousel {
+  margin-top: 20vh;
+  width: 60vw;
+  height: 50vh;
+  margin-bottom: 20vh;
+  margin-left: 20vw;
+}
+
+.carousel img {
+  width: 60vw;
+  height: 60vh;
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .carousel {
+    margin-top: 40vh;
+    width: 100vw;
+    height: 40vh;
+    margin-left: 0;
+  }
+
+  .carousel img {
+    width: 100vw;
+    height: 40vh;
+  }
+
+
+  .conteudo {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 10vw;
+    height: 3vh;
+    align-items: center;
+    justify-content:center;
+  }
+
+  .logo img {
+    width: 30vw;
+  }
+
+  .topico1 {
+    height: 100vh;
+    background-image: url(./assets/cafe-e1621265710869.webp);
+  }
+
+  .nav {
+    height: 20vh;
+  }
+
+  .texto {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    font-size: 3vw;
+  }
+
+  .texto h1 {
+    font-size: 5vw;
+  }
+
+  .rainha {
+    margin-top: 25vh;
+    margin-bottom: 10vh;
+  }
+
+  .texto-rainha {
+    width: 80vw;
+  }
+
+  .texto-rainha h1 {
+    font-size: 5vw;
+  }
+
+  .texto-rainha p {
+    font-size: 3.5vw;
+    letter-spacing: 0;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .redes {
+    margin-top: 10vh;
+    width: 80vw;
+  }
+
+  .redes img {
+    width: 10vw;
+  }
+
+  .form {
+    width: 90vw;
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 5vw
+  }
+
+  .form input {
+    margin-top: 1vh;
+    width: 65vw;
+    height: 4vh;
+    font-size: 2.5vw;
+    border-radius: 10px;
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid #964b00;
+    color: #964b00;
+    padding: 2vw;
+
+  }
+
+  button {
+    width: 25vw;
+    text-align: center;
+    height: 5vh;
+    font-size: 2.5vw;
+  }
+
+  .logo2 {
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .logo2 img {
+    width: 50vw;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .nav--hidden {
+    transform: translateY(-30vw);
+  }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .carousel {
+    width: 100vw;
+    height: 30vh;
+    margin-left: 0;
+  }
+
+  .carousel img {
+    width: 100vw;
+    height: 30vh;
+  }
+
+
+  .conteudo {
+    width: 100vw;
+  }
+
+  .logo {
+    width: 100vw;
+    height: 3vh;
+  }
+
+  .logo img {
+    width: 30vw;
+  }
+
+  .topico1 {
+    height: 100vh;
+    background-image: url(./assets/cafe-e1621265710869.webp);
+  }
+
+  .navbar {
+    height: 12vh;
+  }
+
+  .nav-items {
+    margin-top: 5vh;
+    font-size: 3.5vw;
+  }
+
+  .texto {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar {
+    font-size: 3vw;
+  }
+
+  .texto h1 {
+    font-size: 5vw;
+  }
+
+  .rainha {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+  }
+
+  .texto-rainha {
+    width: 90vw;
+  }
+
+  .texto-rainha h1 {
+    font-size: 5vw;
+  }
+
+  .texto-rainha p {
+    font-size: 4vw;
+    letter-spacing: 0;
+  }
+
+  .news {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .redes {
+    margin-top: 10vh;
+    width: 80vw;
+  }
+
+  .redes img {
+    width: 10vw;
+  }
+
+  .form {
+    width: 90vw;
+    margin: 0;
+    padding-left: 5vw;
+    padding-right: 5vw
+  }
+
+  .form input {
+    margin-top: 1vh;
+    width: 70vw;
+    height: 4vh;
+    font-size: 4vw;
+    border-radius: 10px;
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid #964b00;
+    color: #964b00;
+    padding: 2vw;
+
+  }
+
+  button {
+    width: 30vw;
+    text-align: center;
+    height: 5vh;
+    font-size: 4vw;
+  }
+
+  .logo2 {
+    width: 100%;
+    margin-top: 2vh;
+  }
+
+  .logo2 img {
+    width: 50vw;
+  }
+
+  .form {
+    width: 100%;
+  }
+
+  .nav--hidden {
+    transform: translateY(-30vw);
+  }
+  
+}
+
+@media (max-width: 999px) {
+
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 30vh;
+    right: 0;
+    width: 100vw;
+    height: 92vh;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+    font-size: 3vw;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+

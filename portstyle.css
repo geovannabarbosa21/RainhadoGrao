@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo img {
+  width: 10vw;
+  margin-top: 5vh;
+}
+
+.nav--hidden {
+  transform: translateY(-30vh);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  height: 30vh;
+  width: 100vw;
+  transition: transform 0.5s;
+  font-family: "Habibi", serif;
+}
+
+.nav-list {
+  width: 80vw;
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  font-size: 1vw;
+}
+
+.nav-list a {
+  color: #964b00;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #964b00;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+.cartao {
+  padding-top: 50vh;  
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.cartao img {
+  width: 25vw;
+  height: 80vh;
+}
+
+.flyer {
+  margin-top: 10vh;
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+}
+
+.flyer img {
+  width: 25vw;
+  height: 80vh;
+}
+
+.h1f {
+  margin-top: 10vh;
+}
+
+.form h1 {
+    text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .cartao img {
+        width: 100vw;
+        height: 80vh;
+    }
+
+    .flyer img {
+        width: 100vw;
+        height: 80vh;
+    }
+}
